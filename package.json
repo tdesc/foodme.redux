@@ -1,0 +1,61 @@
+{
+  "name": "foodme-redux",
+  "version": "0.0.1",
+  "description": "",
+  "main": "food-redux.js",
+  "scripts": {
+    "build": "echo \"Run build...\" && rollup -c && echo \"Finish build...\"",
+    "dev": "echo \"Run build...\" && rollup -c -w && echo \"Finish build...\"",
+    "build-lint": "echo \"Run build prod...\" && BUILD_MODE=eslint rollup -c && echo \"Finish build...\"",
+    "build-prod": "echo \"Run build prod...\" && BUILD_MODE='production' rollup -c && echo \"Finish build...\"",
+    "build-all": "npm run build && npm run build-prod",
+    "watch": "echo \"Run build...\" && rollup -c --watch && echo \"Finish build and start watch...\"",
+    "sample": "npm-run-all --parallel reload dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://"
+  },
+  "author": "Valentin Kalinin",
+  "license": "MIT",
+  "bugs": {
+    "url": "http://"
+  },
+  "homepage": "http://",
+  "dependencies": {
+    "object-path-immutable": "^0.5.1",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.6",
+    "redux-store-emitter": "^1.0.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "livereload": "^0.6.0",
+    "npm-run-all": "^3.1.2",
+    "redux-combine-deep-props": "^1.0.0",
+    "rollup": "^0.37.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-eslint": "^3.0.0",
+    "rollup-plugin-inject": "^2.0.0",
+    "rollup-plugin-json": "^2.1.0",
+    "rollup-plugin-livereload": "^0.4.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-progress": "^0.1.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-plugin-visualizer": "^0.2.0",
+    "rollup-watch": "^2.5.0",
+    "uglify-js": "^2.7.5"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "x-docs-redux",
+  "version": "0.0.2",
+  "homepage": "",
+  "authors": [
+    "Valentin Kalinin <valentin.kalinin@ids360.ru>"
+  ],
+  "description": "",
+  "main": "build/x-docs-redux.js",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+    
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "rollup.config.js",
+    "package.json"
+  ]
+}
